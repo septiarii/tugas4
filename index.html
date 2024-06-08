@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #bungkus {
+            font-family: Montserrat, sans-serif;
+            line-height: 28px;
+            margin: auto;
+            width: 70%;
+            box-shadow: 6px 6px 5px 10px #666666;
+        }
+
+        header {
+            font-weight: bold;
+            text-shadow: 4px 4px 3px #77f;
+            padding: 50px;
+            text-align: center;
+            background: #3220f8;
+            color: white;
+        }
+
+        nav {
+            text-align: left;
+            border: 1px dotted;
+            background-color: #414241;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            font-size: 18px;
+            font-weight: 400;
+            text-decoration: none;
+            color: white;
+        }
+
+        nav li {
+            display: inline;
+            list-style-type: none;
+            margin-right: 20px;
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        a:hover {
+            color: pink;
+        }
+
+        a:active {
+            color: orange;
+        }
+
+        p {
+            text-indent: 50px;
+        }
+
+        p::first-letter {
+            font-size: 32px;
+            font-weight: bold;
+            color: saddlebrown;
+        }
+
+        .dropdown {
+            display: inline-block;
+            color: white;
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            background-color: #888888;
+            min-width: 150px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+            z-index: 1;
+            position: absolute;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        #content {
+            text-align: justify;
+            flex: 7;
+            order: 1;
+            background-color: white;
+            padding: 20px;
+        }
+
+        aside {
+            flex: 3;
+            order: 2;
+            background-color: #b6b1fd;
+            padding: 20px;
+            border: solid;
+            border-radius: 10px 5px 10px 5px;
+        }
+
+        article {
+            width: 100%;
+            border: 4px solid black;
+            padding: 10px;
+            overflow: auto;
+        }
+
+        img {
+            float: left;
+            margin: 5px;
+            background-color: rgb(109, 139, 248);
+            width: 40%;
+            padding: 8px;
+        }
+
+        .imagep {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            margin: 0px auto;
+            display: block;
+        }
+
+        footer {
+            padding: 20px;
+            color: white;
+            background-color: #00a2c6;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 600px) {
+            #bungkus {
+                width: 100%;
+            }
+
+            main {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bungkus">
+        <header>
+            <h1>TOKO HERMAS CELL</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#sejarah">Sejarah</a></li>
+                <li><a href="#pelayanan">pelayanan</a></li>
+                <li><a href="#lokasi">Lokasi</a></li>
+                <li>
+                    <div class="dropdown">
+                        Menu
+                        <div class="dropdown-content">
+                            <a href="#profile">Profile</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <div id="content">
+                <section>
+                    <article>
+                        <h3 id="sejarah">SEJARAH</h3>
+                        <img src="poto/pot.jpg" alt="sejarah">
+                        <p>Toko Hermas Cell adalah toko yang menyediakan berbagai brbagai pelayanan mulai dari service elektronoik, 
+                            percetakan acecoris hp dan jual beli alat elektronik. toto hermas cell di dirikan pada tahun 2018 yang 
+                            dulnya hanya menjual accerosis hp dan service hp saja. seiring dengan berjalanya waktu playanan juga semakin bertambah.</p>
+                    </article>
+                </section>
+                <hr>
+                <br>
+                <section>
+                    <article>
+                        <h3 id="pelayanan">pelayanan</h3>
+                        <img src="poto/images (1).jpg" alt="pelayanan">
+                        <p>Toko hermas cell menyediakan berbagai pelayanan yang dapat membuat anda nyaman antara lain yaitu:
+                            <ul>
+                                <li>service HP/Leptop</li>
+                                <li>percetakan</li>
+                                <li>photo copy</li>
+                                <li>acrcoris HP</li>
+                            </ul>
+                            itulah berbagai pelayanan yang kita sediakan. dijamin barang 100% barang ori dan di kerjakan oleh kita pribadi 
+                        </p>
+                    </article>
+                </section>
+                <hr>
+                <br>
+                <section>
+                    <article>
+                        <h3 id="lokasi">LOKASI</h3>
+                        <img src="poto/toko.jpg" alt="lokasi">
+                        <p>Toko hermas cell berlokasi <i>timur, Gunung malang, Gereneng, Kec. Sakra Tim., Kabupaten Lombok Timur, Nusa Tenggara Bar. 83671</i> 
+                            8G5J+MC Gereneng, Kabupaten Lombok Timur, Nusa Tenggara Bar.
+                        </p>
+                        <table>
+                            <tr>
+                                <td>dusun</td>
+                                <td>:</td>
+                                <td>gunung malang</td>
+                            </tr>
+                            <tr>
+                                <td>desa</td>
+                                <td>:</td>
+                                <td>gereneng timur</td>
+                            </tr>
+                            <tr>
+                                <td>kecamatan</td>
+                                <td>:</td>
+                                <td>sakra timur</td>
+                            </tr>
+                            <tr>
+                                <td>kabupaten</td>
+                                <td>:</td>
+                                <td>lombok timur</td>
+                            </tr>
+                            <tr>
+                                <td>Provinsi</td>
+                                <td>:</td>
+                                <td>nusa tenggara barat (NTB)</td>
+                                <tr>
+                                    <td>negara</td>
+                                    <td>:</td>
+                                    <td>Indonesia</td>
+                                </tr>
+                            </tr>
+                        </table>
+                    </article>
+                </section>
+            </div>
+            <aside>
+                <h3 id="profile">PROFILE DATA PRIBADI</h3>
+                <table>
+                    <tr>
+                        <td colspan="3">
+                            <center><img src="poto/poto.jpg" alt="profile" class="imagep"></center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td>Septiari</td>
+                    </tr>
+                    <tr>
+                        <td>Alamat</td>
+                        <td>:</td>
+                        <td>Gunung Malang, Desa Gereneng Timur,
+                             Kec. Sakra Tiur, Kab. Lombok Timur, NTB</td>
+                    </tr>
+                    <tr>
+                        <td>TTL</td>
+                        <td>:</td>
+                        <td>04 September 2001</td>
+                    </tr>
+                    <tr>
+                        <td>Status</td>
+                        <td>:</td>
+                        <td>Belum Kawin</td>
+                    </tr>
+                </table>
+            </aside>
+        </main>
+        <footer>
+            <h2>@Tugas Perancangan Web</h2>
+        </footer>
+    </div>
+</body>
+
+</html>
